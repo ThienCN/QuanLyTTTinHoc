@@ -1,0 +1,174 @@
+﻿/* HEADER bao gồm logo và thanh menu */
+body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header .logo {
+    width: 50%;
+}
+
+.menu { /*thanh menu chung*/
+    width: 100%;
+    position: relative;
+}
+
+#navbar { /*id=navbar --> id của menu để khi gom lại*/
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden; /*Bỏ thang scroll ngang trong menu thu gọn*/
+}
+
+a.navbar-brand { /*icon home đầu thanh menu*/
+    float: left;
+    padding: 15px;
+    color: white !important;
+    font-size: 25px;
+}
+
+.navbar-default { /*thanh menu*/
+    background-color: #197485 !important;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.navbar .navbar-collapse ul li a { /*Các mục trên thanh menu*/
+    color: white !important;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.navbar-default .navbar-nav > .active > a { /*Các mục trên thanh menu khi active*/
+    background-color: #56A1B0 !important;
+}
+
+.navbar .navbar-collapse ul li:hover a { /*Các mục trên thanh menu khi hover*/
+    background-color: #56A1B0 !important;
+}
+
+a.navbar-brand:hover { /*icon home đầu thanh menu khi hover*/
+    background-color: #56A1B0 !important;
+}
+
+/* Modal Đăng nhập */
+button.close {
+    color: red !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+button#btnLogin {
+    width: 200px;
+    height: 50px;
+    background-color: #14ABAD !important;
+    border: 1px solid #999393 !important;
+}
+
+    button#btnLogin:hover {
+        background-color: #D0D2D3 !important;
+    }
+
+.form-control {
+    height: 40px;
+    border: 1px solid #999393;
+}
+
+span.error {
+    color: red;
+}
+
+.div-btnLogin {
+    text-align: center !important;
+    font-weight: bold;
+}
+
+
+/*ĐĂNG KÝ KHÓA HỌC*/
+option {
+  height: 70px;
+  padding:10px;
+}
+
+#addMH {
+    font-size: 20px;
+    color: #197485;
+    padding: 10px 20px 10px 55px;
+    border: none;
+    float: left;
+}
+
+    #addMH:hover {
+        color: white;
+    }
+
+#register_button {
+    float: right;
+    margin: 15px 55px 0 0;
+    background: #197485;
+    font-size: 20px;
+    color: white;
+    padding: 7px;
+}
+
+
+label {
+    /* float: right; */
+    line-height: 35px;
+}
+
+
+
+
+/* FOOTER*/
+footer {
+    background-color: #197485;
+    color: white;
+    padding: 20px;
+}
+
+    footer i {
+        color: black;
+    }
+/*THÔNG TIN ĐĂNG KÝ KHÓA HỌC*/
+.thong-tin-dang-ky form {
+    margin-top: 15px;
+    padding: 15px;
+    background-size: 100%;
+    background-color: #D0D2D3;
+}
+
+    .thong-tin-dang-ky form .muc-ca-nhan{
+        text-align: center;
+        color: #197485;
+        font-weight: bold;
+    }
+.muc-dang-ky{
+	text-align: center;
+    color: #197485;
+    font-weight: bold;
+}
+.control-label {
+    text-align: right
+}
+
+.btnminus:hover {
+    border: 2px solid red;
+    padding: 0px 5px 0px 5px;
+    line-height: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+    header .logo {
+        width: 100%;
+    }
+
+    .navbar .navbar-collapse ul li a { /*Các mục trên thanh menu*/
+        font-size: 10px;
+    }
+
+    .control-label {
+        text-align: left;
+    }
+}

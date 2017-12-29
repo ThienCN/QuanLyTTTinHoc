@@ -1,0 +1,212 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+}
+  
+
+/* Image Slide */
+#myCarousel{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Thống kê */
+.tieu-de-thong-ke h3{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+.group-thong-ke{
+    background-color: #E1DBE8;
+}
+.group-thong-ke .bieu-tuong{
+    font-size: 35px;
+    letter-spacing: -.08em;
+}
+.box{
+    text-align: center;
+    float: left;
+    width: 25%;
+    font-size: 20px;
+}
+.box i{
+    font-size: 80px;
+    color: #197485;
+}
+.box h3{
+    font-weight: bold;
+}
+.div-square {
+    padding: 5px;
+    border: 3px double #e1e1e1;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+.div-square a h4 {
+    font-weight: bold;
+}
+
+.div-square > a {
+    color: #197485;
+    text-decoration: none;
+}
+
+.div-square a i {
+    font-size: 75px;
+}
+
+.div-square:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0px 0px 20px gray;
+    -webkit-box-shadow: 0px 0px 30px gray;
+    -moz-box-shadow: 0px 0px 30px gray;
+    opacity: 1;
+}
+
+/* Lịch thi */
+.lich-thi{
+    padding: 10px;
+}
+.lich-thi img{
+    width: 100%;
+}
+
+/* Tiện ích: tin tức, thông báo, lịch thi, đăng ký trực tuyến */
+.nav-tabs>li{ /*Danh sách các tabs*/
+    float: left;
+    position: relative; 
+}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover{/*Nội dung các tabs khi hover và active*/
+    color: #197485 !important; 
+    border-left: 2px solid #197485 !important;
+    border-right: 2px solid #197485 !important;
+    border-top: 2px solid #197485 !important;
+    font-weight: bold;
+}
+.tab-tin-tuc-thong-bao{/* Tabs tin tức và thông báo */
+    float: left;
+    width: 100%;
+    padding-right: 10px;
+}
+.header-tabs{ /* Tiêu đề tabs */
+    border-bottom: 2px solid #197485;
+}
+.header-tabs li{ /* Nội dung tiêu đề tabs */
+    margin-bottom: -2px;
+}
+.header-tabs li>a{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+}
+.noidung-tab{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.noidung-tab li>a{
+    font-size: 15px;
+    color: red;
+    text-decoration: none;
+}
+.noidung-tab li span{
+    color: #585656;
+    font-size: 10px;
+}
+.noidung-tab li>a:hover{
+    color: #197485;
+}
+.noidung-tab li>p{
+    font-size: 10px;
+}
+.noidung-tab>li{
+    border-bottom: 1px solid #197485;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+a.noidung-tab-all{
+    border-bottom: 2px solid #197485;
+    color: #197485;
+    float: right;
+    text-decoration: none;
+}
+a.noidung-tab-all:hover{
+    color: red;
+    border-bottom-color: red;
+}
+.khung-tien-ich{
+    padding: 20px;
+}
+.khung-tien-ich img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide{
+    position: relative;
+}
+.slide-caption {
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    min-height: 80px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    color: #197485;
+    margin-bottom: 30px;
+    background-color: rgba(230, 251, 253, 0.5);
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .tieu-de-thong-ke h3{
+        font-size: 20px;
+    } 
+    .group-thong-ke .box .bieu-tuong,  .group-thong-ke .box .bieu-tuong i{
+        font-size: 25px;
+        margin: 0;
+    }  
+    .header-tabs li>a{
+        font-size: 15px;
+    }
+    .tab-content ul li>a,{
+        font-size: 17px;
+    }
+    .tab-content ul li>p{
+        font-size: 10px;
+    }
+    .khung-tien-ich img{
+        width: 70%;
+    }  
+    .imgDKKH-right{
+        display: none;
+    }
+    .imgDKKH-bottom{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .tieu-de-thong-ke h3, .group-thong-ke .box, 
+    .group-thong-ke .box .bieu-tuong,  .group-thong-ke .box .bieu-tuong i{
+        font-size: 15px;
+    }  
+}

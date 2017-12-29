@@ -1,0 +1,85 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+}
+
+/*ĐƯỜNG DẪN*/
+.duong-dan{
+    padding-top: 5px;
+}
+.duong-dan p a{
+    color: #197485;
+    text-decoration: none;
+}
+.duong-dan p a:hover{
+    color: red;
+}
+
+
+/*TIN TỨC*/
+.line{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin: 5px;
+    border-bottom: 1px dashed #197485;
+}
+.thong-bao-tin-tuc a{
+    text-decoration: none;
+    color: #035968;
+}
+.thong-bao-tin-tuc a:hover{
+    color:red;
+}
+.thong-bao-tin-tuc span,.thong-bao-tin-tuc i{
+    color: #B6B3B3;
+}
+img{
+    margin-bottom: 5px;
+}
+.khoang-cach-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.xem-tiep-noi-dung{
+    color: rgba(255, 60, 0, 0.96);
+    text-align: right;
+    cursor: pointer;
+}
+.xem-tiep-noi-dung a{
+	text-decoration: none;
+}
+/*NỘI DUNG THÔNG BÁO*/
+.noi-dung-thong-bao{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Pagination */
+.pagination-sm li a{
+	color:#197485;
+}
+.pagination-sm li.active a, .pagination-sm li:hover > a{
+	background-color:#197485;
+	color:white !improtant;
+}
+
+
+
+@media only screen and (max-width: 768px){    
+    .thong-bao-tin-tuc a,.thong-bao-tin-tuc h3{
+        font-size: 16px;
+        margin: 0px;
+    }
+    .noi-dung-tom-tat, .xem-tiep-noi-dung{
+        display: none;
+    }
+    .noi-dung-tom-tat-chinh{
+        font-size: 8px;
+    }
+    .thong-bao-tin-tuc span{
+        font-size: 8px;
+    }
+}

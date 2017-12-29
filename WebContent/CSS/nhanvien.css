@@ -1,0 +1,74 @@
+﻿body {
+    counter-reset: section;
+}
+
+/*TRANG CỦA BẠN*/
+.div-square {
+    padding: 5px;
+    border: 3px double #e1e1e1;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin: 5px;
+    text-align: center;
+
+    -webkit-transform: scale(0.9); 
+    -moz-transform: scale(0.9); 
+    -o-transform: scale(0.9);
+    -webkit-transition-duration: 0.5s; 
+    -moz-transition-duration: 0.5s; 
+    -o-transition-duration: 0.5s;
+    
+}
+.div-square a h4 {
+    font-weight: bold;
+}
+.div-square > a {
+    color: #197485;
+    text-decoration: none;
+}
+.div-square a i{
+    font-size: 75px;
+}
+.div-square:hover {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1); 
+    -o-transform: scale(1.1); 
+    box-shadow: 0px 0px 20px gray; 
+    -webkit-box-shadow: 0px 0px 30px gray; 
+    -moz-box-shadow: 0px 0px 30px gray; 
+    opacity: 1;
+}
+/*TRA CỨU ĐĂNG KÝ ONLINE*/
+.input-group-btn {
+    text-align: right
+}
+
+.input-group-btn button {
+    background-color: #197485;
+    color: white;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.input-group-btn button:hover, .input-group-btn button:focus {
+    color: white;
+    background-color: #197485;
+}
+/*NHÂN VIÊN ĐĂNG KÝ KHÓA HỌC*/
+.span-error{
+    color:red;
+    font-size: 8px;
+}
+
+
+
+
+
+/*HÓA ĐƠN*/
+.hoadon {
+    margin-left: 150px;
+}
+
+
+

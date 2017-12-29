@@ -1,0 +1,191 @@
+﻿body {
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    width: 100%;
+}
+/*LOGO*/
+.logo {
+    width: 50%;
+    padding-bottom: 5px;
+}
+
+.navbar {
+    border: 1px solid #197485;
+    min-height: 50px;
+    margin-bottom: 0px;
+    background-color: #197485;
+}
+/*NAV LEFT*/
+.nav-menu {
+    height: 100%;
+    overflow: hidden;
+    border-right: 2px solid #CCCACA;
+    background-color: white;
+    border-top: 3px solid white;
+}
+
+.navbar-collapse {
+    padding: 0px;
+}
+
+.nav-menu .navbar-collapse .nav > li {
+    border-bottom: 1px solid #CCCACA;
+}
+
+.nav-menu .navbar-collapse .nav > li > a, .nav-menu .navbar-collapse .nav > li > span {
+    font-weight: bold;
+    font-size: 16px;
+    color: #197485;
+}
+
+.nav-menu .navbar-collapse .nav > li:hover > a, .nav-menu .navbar-collapse .nav > li:hover,
+.nav-menu .navbar-collapse .nav > li:focus > a, .nav-menu .navbar-collapse .nav > li:focus {
+    background-color: #197485 !important;
+    color: white !important;
+}
+
+.active {
+    background-color: #197485 !important;
+}
+
+.active > a {
+    color: white !important;
+}
+
+.navbar-right a, .navbar-left a { /* Thông tin tên nhân viên đang sử dụng trên menu chính */
+    color: white !important;
+    text-decoration: none;
+}
+
+#page-trich-dan {
+    font-weight: bold;
+}
+
+.navbar-brand { /*icon home đầu thanh menu*/
+    padding: 15px;
+    color: white !important;
+    font-size: 25px;
+}
+
+.navbar-right {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.navbar-left {
+    text-align: left;
+    margin-top: 17px;
+}
+
+.image-nhanvien img { /*image nhan vien*/
+    border-radius: 50%;
+    width: 11%;
+    padding-right: 3px;
+}
+
+/*SUB MENU*/
+.navbar-default .navbar-collapse ul li ul.sub-menu {
+    display: none;
+    min-width: 220px; /* Độ rộng của sub-menu để set độ rộng cho item-list của sub-menu khi hover vào item-list của nó */
+    z-index: 999; /* Hiển thị chồng lên trên */
+}
+
+.navbar-default .navbar-collapse ul li ul.sub-menu li > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 16px;
+    color: #04583b !important;
+    background-color: #e2e0e0;
+}
+
+.navbar-default .navbar-collapse ul li ul.sub-menu li:hover > a {
+    color: #197485 !important;
+    font-weight: bold;
+}
+
+ul.none-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.none-style > li {
+    width: auto; /* set width của item-list bằng với menu cha để set hover cho item-list */
+}
+
+/*CONTENT*/
+.phan-noi-dung {
+    max-width: 1450px;
+    padding: 10px;
+    min-height: 1050px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .nav-menu {
+        z-index: 999;
+        position: absolute;
+        width: 220px;
+    }
+
+    .phan-noi-dung {
+        margin: 0 0 0 220px;
+        min-height: 1050px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #page-trich-dan {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    header {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #page-trich-dan {
+        display: none;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+
+    .navbar-left {
+        margin-top: 0px;
+    }
+
+    .navbar-nav {
+        margin: 0px;
+    }
+
+    .nav-menu .navbar-collapse .nav > li > a, .nav-menu .navbar-collapse .nav > li > span {
+        font-size: 10px;
+    }
+
+    .phan-noi-dung {
+        padding: 5px;
+    }
+}

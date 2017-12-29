@@ -1,0 +1,54 @@
+/* HEADER: logo and menu chính */
+header .logo{
+    width: 50%;
+}
+.menu{ /*thanh menu chính*/
+    width: 100%;
+    position: relative;
+} 
+.navbar{ /*thanh menu chính*/
+    background-color: #197485 !important;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+#nav-left{/*id=navbar --> id của menu-left để khi gom lại*/
+    padding: 0px;
+    margin: 0px;    
+    overflow-x: hidden; /*Bỏ thang scroll ngang trong menu thu gọn*/
+}  
+a.navbar-brand{ /*icon home đầu thanh menu*/
+    float: left;   
+    padding: 15px;
+    color: white !important;
+    font-size: 25px;
+}
+.navbar-right{
+    text-align: right;
+    margin-top: 5px;
+}
+.navbar-right a{/* Thông tin tên nhân viên đang sử dụng trên menu chính */
+    color: white;
+}
+
+/* MENU-LEFT */
+.nav-menu{
+    z-index: 1;
+    position: absolute;
+    width: 230px;
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    border-right: 2px solid #949494;
+}
+#nav-left ul li a{
+    font-weight: bold;
+    color: #197485;
+}
+#nav-left ul li:hover a{
+    background-color: red;
+   
+}
+#nav-left ul li{
+    border-bottom: 1px solid #BEBDBD;
+}

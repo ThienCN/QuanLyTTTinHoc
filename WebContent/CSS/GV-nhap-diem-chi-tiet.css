@@ -1,0 +1,34 @@
+table {
+	width: 100%;
+    table-layout:fixed;
+}
+thead {
+    display:table;
+    width:100%;
+    width:calc(100% - 18px);
+}
+tbody {
+    height:250px;
+    overflow:auto;
+    overflow-x:hidden;
+    display:block;
+}
+tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+
+#btn-xac-nhan:hover{
+    color:palegoldenrod;
+}
+
+#btn-xac-nhan {
+    background: #197485;
+    color:white;
+}
+#btn-chinh-sua {
+    background: #197485;
+    color:white;
+}

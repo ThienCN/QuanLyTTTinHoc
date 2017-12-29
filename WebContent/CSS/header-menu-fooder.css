@@ -1,0 +1,181 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+}
+  
+/* HEADER bao gồm logo và thanh menu */
+
+header .logo{
+    width: 50%;
+}
+.menu{ /*thanh menu chung*/
+    width: 100%;
+    position: relative;
+} 
+#navbar{/*id=navbar --> id của menu để khi gom lại*/
+    padding: 0px;
+    margin: 0px;    
+    overflow-x: hidden; /*Bỏ thang scroll ngang trong menu thu gọn*/
+}  
+
+a.navbar-brand{ /*icon home đầu thanh menu*/
+    float: left;   
+    padding: 15px;
+    color: white !important;
+    font-size: 25px;
+}
+.navbar-default{ /*thanh menu*/
+    background-color: #197485 !important;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+.navbar .navbar-collapse ul li a,.navbar .navbar-collapse ul li span{/*Các mục trên thanh menu*/
+    color:white !important;    
+    font-weight: bold;
+    font-size: 15px;
+} 
+
+.navbar .navbar-collapse ul li:hover a{/*Các mục trên thanh menu khi hover*/
+    background-color: #56A1B0 !important;
+}
+a.navbar-brand:hover{ /*icon home đầu thanh menu khi hover*/
+    background-color: #56A1B0 !important;
+}
+
+/* Modal Đăng nhập */
+.modal-content{
+     border: 5px solid #197485; 
+     border-radius: 25px;
+}
+.modal-header{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.modal-body{
+	line-height: 35px;
+	padding: 0;
+}
+
+.form-group{
+	padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+}
+.checkbox-login{
+    height: 50px; 
+    margin-bottom: 15px;
+    width: 100.2%; 
+    background-color: #197485 !important; 
+    border-bottom: 2px solid #7C7A7A;
+    border-top: 2px solid #7C7A7A;
+}
+.checkbox-login label{
+    margin-top: 10px;
+    color: white;
+    text-align: left;
+}
+button.close{
+    color:red !important;
+    text-align: center;
+    font-size: 30px;
+}
+button#btnLogin{
+    width: 200px;  
+    height: 50px;  
+    border-radius: 30px;
+    background-color: #197485 !important;
+    border: 1px solid #56A1B0 !important;
+}
+button#btnLogin:hover{
+    background-color: #56A1B0 !important;
+}
+.form-control{
+    height: 40px;
+    border: 1px solid #7C7A7A;
+}
+span.error{
+    color: red;
+}
+.div-btnLogin{
+    text-align: center !important;
+    font-weight: bold;
+}
+.checkbox{
+	padding: 15px;
+}
+
+
+
+/* FOOTER*/
+footer{
+    background-color: #197485;
+    color: white;
+    padding: 10px;
+}
+footer .footer-name-trungtam{
+    font-weight:bold; 
+    font-size: 20px
+}
+footer i{
+    color:black;
+}
+
+/*ICON ĐĂNG KÝ TRỰC TUYẾN*/
+.imgDKKH-right{
+    width: 50px;
+    position: fixed;
+    bottom:170px;
+    right:0;
+    z-index: 999;
+}
+.imgDKKH-bottom{
+    width: 150px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    z-index: 999;
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1000px){
+    .menu-right{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    header .logo{
+        width: 100%;
+    }
+    .navbar .navbar-collapse ul li a,.navbar .navbar-collapse ul li span{/*Các mục trên thanh menu*/
+        font-size: 10px;
+    } 
+    footer p, footer .footer-name-trungtam{
+        font-size: 8px;
+    }
+    .imgDKKH-right{
+        display: none;
+    }
+    .imgDKKH-bottom{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 400px){
+    .menu-right{
+        display: inline;
+    }
+    .checkbox-login{
+        height: 90px;
+    }
+}

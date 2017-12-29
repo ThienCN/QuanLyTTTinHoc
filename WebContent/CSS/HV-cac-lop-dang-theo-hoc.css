@@ -1,0 +1,32 @@
+﻿.phan-noi-dung {
+    margin-top:10px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.mon-hoc {
+    cursor:pointer;
+    font-weight: bold;
+    font-size:45px;
+    color: #197485;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+    .mon-hoc:hover {
+        border: 2px solid beige;
+    }
+
+#khoa-hoc {
+    font-weight: bold;
+    font-size: 45px;
+    color: #197485;
+    padding-left:10px;
+}
+
+.chi-tiet:hover {
+    color: #197485;
+    cursor:pointer;
+}

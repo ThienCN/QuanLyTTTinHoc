@@ -1,0 +1,27 @@
+﻿#row1 {
+    padding: 10px;
+}
+
+.head1 {
+    border: 2px solid #197485;
+    color: white;
+    background: #197485;
+    padding: 10px;
+}
+
+#btn-loc-du-lieu {
+    text-align: right;
+    color: blue;
+    float: right;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th{
+    border-top:none;
+    border-bottom:none;
+}
+
+.table > tbody > tr.active > td, .table > tbody > tr.active > th, .table > tbody > tr > td.active, .table > tbody > tr > th.active, .table > tfoot > tr.active > td, .table > tfoot > tr.active > th, .table > tfoot > tr > td.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th, .table > thead > tr > td.active, .table > thead > tr > th.active {
+    border-bottom: 1px solid #ddd;
+}
