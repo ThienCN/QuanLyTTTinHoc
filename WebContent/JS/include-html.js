@@ -3,6 +3,8 @@
 	
     $.get('header-menu.html', function (res) {
         $('#header-menu').html(res);
+        activeMenuId = '#index';
+        
         //Sự kiện active menu
         var path = document.location.pathname;
         var activeMenuId = '';
@@ -27,11 +29,8 @@
         {
             activeMenuId = "#dang-ky-khoa-hoc";
         }
-        else if (path.lastIndexOf("trungtamtinhoc.ocs.opusinteractive.io") >= 0) {
-            activeMenuId = '#index';
-        }
         else if (path.lastIndexOf("QuanLyTTTinHoc") >= 0) {
-            activeMenuId = '#index';
+        	activeMenuId = '#index'; 
         }
         
 

@@ -152,30 +152,7 @@ $(document).ready(function(){
 	
 	
 	$("#btn-xuat-file-DSDKOnl").click(function(e){
-			
-		var nameFile = prompt("Mời bạn nhập tên file muốn xuất!\rFile xuất ra sẽ nằm ở ổ đĩa D!", "");
-		
-		if(nameFile != null){
-			//flag = 1: Xuất dữ liệu HV đăng ký onl của 1 lớp học
-			flag = 1;
-			$.ajax({
-				type:"GET",
-				url:"ExportFileExcel",
-				data:{
-					flag:flag,
-					maLopHoc: $("#dsLopHoc").val(),
-					nameFile:nameFile
-				},
-				dataType:"json",
-				success: function(result){
-					if(result.check == "ok")
-						alert("Xuất file thành công!");
-					if(result.check == "fail")
-						alert("Mời bạn nhập tên file khác!");
-					return;
-				}
-			})
-		}
+		window.location.assign("WriteFileExcelHVDangKyOnl.jsp?maLopHoc="+$("#dsLopHoc").val());
 	})
 	
 })

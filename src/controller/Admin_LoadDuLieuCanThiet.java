@@ -106,7 +106,7 @@ public class Admin_LoadDuLieuCanThiet extends HttpServlet {
 			    return;
 			}
 	    }
-	    //flag=5: load ds PHÒNG HỌC
+	    //flag=5: load ds GIÁO VIÊN
 	    if(flag == 5) {
 	    	List<GiaoVienModel> dsGiaoVien = NV_thongkeDAO.LayDanhSachGiaoVien();
 			

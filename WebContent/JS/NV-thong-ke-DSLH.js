@@ -113,30 +113,7 @@ $(document).ready(function(){
 	
 	
 	$("#btn-xuat-file-LopHoc").click(function(e){
-		
-		var nameFile = prompt("Mời bạn nhập tên file muốn xuất!\rFile xuất ra sẽ nằm ở ổ đĩa D!", "");
-		
-		if(nameFile != null){
-			//flag = 2: Xuất dữ liệu ds Lớp học của 1 Khóa học
-			flag = 2;
-			$.ajax({
-				type:"POST",
-				url:"ExportFileExcel",
-				data:{
-					flag:flag,
-					maKH:$("#dsKhoaHoc").val(),
-					nameFile:nameFile
-				},
-				dataType:"json",
-				success: function(result){
-					if(result.check == "ok")
-						alert("Xuất file thành công!");
-					if(result.check == "fail")
-						alert("Mời bạn nhập tên file khác!");
-					return;
-				}
-			})
-		}
+		window.location.assign("WriteFileExcelLopHoc.jsp?maKH="+$("#dsKhoaHoc").val());
 	})
 	
 })
