@@ -67,8 +67,8 @@ public class dangkykhoahocDAO {
 			cstm = cnn.prepareCall("{call spThemDangKyOnl(?,?,?,?,?,?)}");
 			cstm.setString(1, HoTen);
 			cstm.setString(2, NgaySinh);
-			cstm.setString(3, SDT);
-			cstm.setString(4, DiaChi);
+			cstm.setString(3, DiaChi);
+			cstm.setString(4, SDT);
 			cstm.setString(5, Email);
 			cstm.registerOutParameter(6, java.sql.Types.CHAR);
 			
