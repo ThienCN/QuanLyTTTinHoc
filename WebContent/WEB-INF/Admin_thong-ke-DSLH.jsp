@@ -103,6 +103,11 @@
                 </table>
             </div>
             <br />
+            <div class="input-group-btn" style="text-align: right">
+                <button id="btn-xuat-file-LopHoc" class="btn btn-default" type="submit" style="background-color: #197485; color:white; width:130px; ">
+                    Xuất file <i class="fa fa-print"></i>
+                </button>
+            </div>
         </fieldset>
         <div style="text-align: center;">
         	<p><strong id="danh-sach-trong"></strong></p>

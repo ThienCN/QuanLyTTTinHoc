@@ -25,10 +25,10 @@ $(document).ready(function () {
 	            	var valueTD;
 	              	for(i=0; i<n; i++){
 	              		if(result[i].GioiTinh == true){
-	              			result[i].GioiTinh = "nữ";
+	              			result[i].GioiTinh = "Nữ";
 	              		}
 	              		else{
-	              			result[i].GioiTinh = "nam";
+	              			result[i].GioiTinh = "Nam";
 	              		}
 	                	$("#table-ds-nguoi-dung > tbody").append(
 	                        $('<tr>').append(
@@ -196,4 +196,14 @@ $(document).ready(function () {
 		}
 		
 	});
+	
+	$("#btn-xuat-file-NguoiDung").click(function(e){
+		if($("#chuc-vu").val() == "3")
+			flag = 1; //Nhân viên
+		else//admin
+			flag=2;
+		window.location.assign("WriteFileExcelNguoiDung.jsp?flag="+flag);
+	})
+	
+	
 });
